@@ -1,21 +1,17 @@
 <div>
-    <ul *ngIf="deviceInfo">
-    <li> userAgent - {{deviceInfo.userAgent}}</li>
-    <li> os - {{deviceInfo.os}}</li>
-    <li> browser - {{deviceInfo.browser}}</li>
-    <li> device - {{deviceInfo.device}}</li>
-    <li> os_version - {{deviceInfo.os_version}}</li>
-    <li> browser_version - {{deviceInfo.browser_version}}</li>
-    <li> deviceType - {{deviceInfo.deviceType}}</li>
-    <li> orientation - {{deviceInfo.orientation}}</li>
- </ul>
- <div *ngIf="deviceInfo && deviceInfo.deviceType === 'desktop'">
-  Desktop Yes
- </div>
-<div *ngIf="deviceInfo && deviceInfo.deviceType === 'Tablet'">
-  Tablet Yes
-</div><div *ngIf="deviceInfo && deviceInfo.deviceType === 'Mobile'">
-  Mobile Yes
-</div>
-
+  <ul *ngIf="deviceInfo">
+    <li>userAgent - {{ deviceInfo.userAgent }}</li>
+    <li>os - {{ deviceInfo.os }}</li>
+    <li>browser - {{ deviceInfo.browser }}</li>
+    <li>device - {{ deviceInfo.device }}</li>
+    <li>os_version - {{ deviceInfo.os_version }}</li>
+    <li>browser_version - {{ deviceInfo.browser_version }}</li>
+    <li>deviceType - {{ deviceInfo.deviceType }}</li>
+    <li>orientation - {{ deviceInfo.orientation }}</li>
+  </ul>
+  <div *ngIf="deviceInfo && deviceInfo.deviceType === 'desktop'">
+    Desktop Yes
+  </div>
+  <div *ngIf="deviceInfo && deviceInfo.deviceType === 'tablet'">Tablet Yes</div>
+  <div *ngIf="deviceInfo && deviceInfo.deviceType === 'mobile'">Mobile Yes</div>
 </div>
